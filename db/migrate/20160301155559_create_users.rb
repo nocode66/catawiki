@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :address
       t.integer :type
       t.integer :subcription_plan_id
-      t.integer :type
+      t.integer :type, default: 0
       t.date :subscription_expiration_date
 
       t.timestamps

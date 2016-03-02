@@ -18,11 +18,11 @@ ActiveRecord::Schema.define(version: 20160301155559) do
     t.string   "last_name"
     t.string   "email"
     t.string   "address"
-    t.integer  "type"
+    t.integer  "type",                         default: 0
     t.integer  "subcription_plan_id"
     t.date     "subscription_expiration_date"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
   end
 
 end
