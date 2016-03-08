@@ -73,6 +73,8 @@ GEM
     puma (3.0.2)
     rack (2.0.0.alpha)
       json
+    rack-attack (4.4.1)
+      rack
     rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -151,6 +153,7 @@ DEPENDENCIES
   factory_girl_rails
   listen (~> 3.0.5)
   puma
+  rack-attack
   rack-cors
   rails (>= 5.0.0.beta3, < 5.1)
   rspec-rails (= 3.1.0)
