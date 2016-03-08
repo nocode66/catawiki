@@ -47,7 +47,7 @@ module Api::V1
   
       # Only allow a trusted parameter "white list" through.
       def user_params
-        params.require(:user).permit(:first_name, :last_name, :email, :address, :type, :subcription_plan_id, :type, :subscription_expiration_date)
+        params.require(:user).permit(:first_name, :last_name, :email, :address, :role, :subcription_plan_id, :subscription_expiration_date)
       end
   end
 end
