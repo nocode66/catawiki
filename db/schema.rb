@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160308150611) do
+ActiveRecord::Schema.define(version: 20160309153812) do
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
     t.string   "address"
-    t.integer  "type",                         default: 0
+    t.integer  "role",                         default: 0
     t.integer  "subcription_plan_id"
     t.date     "subscription_expiration_date"
     t.datetime "created_at",                               null: false
